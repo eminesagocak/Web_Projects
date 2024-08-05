@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color:#e77f7f;
+    background-color: var(--dark);
+}
+
+header{
+    padding:2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color:#e77f7f;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+input{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#new-task-input{
+    background-color: #dfaaaa;
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin-right: 1rem;
+    color: #f6efef;
+    font-size: 1.25rem;
+}
+
+new-task-input::placeholder{
+
+color: black;
+}
+#new-task-submit{
+    color:#e77f7f;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#new-task-submit :hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.5;
+}
+
+main{
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d5a1a1;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.task .content{
+    flex: 1 1 0%;
+}
+.task .content .text{
+    color:#ffffff;
+    font-size: 1.123rem;
+    width: 100%;
+    display: block;
+    transition: 0.4;
+    -webkit-border-transition: 0.4;
+    -moz-border-transition: 0.4;
+    -ms-border-transition: 0.4;
+    -o-border-transition: 0.4;
+}
+.task .content .text:not(:read-only){
+    color:#e77f7f;
+}
+.task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.task .actions i{
+    cursor:pointer;
+    margin: 0 0.5;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+.task .actions i:hover{
+    opacity:0.8;
+}
+.task .actions.fa-pencil{
+    color: #ffffff;
+    margin-right: 1rem;
+}
+.task.actions.actions.fa-trash{
+    color: crimson ;
+}
+.task .actions .fa-floppy{
+    color: #e77f7f;
+    margin-right: 1rem;
+}
